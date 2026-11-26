@@ -24,4 +24,36 @@ function loginUserMessage (username){
     }
     return`${username} just logged in`
 }
-console.log(loginUserMessage("aditya"));
+//console.log(loginUserMessage("aditya"));
+
+
+function calculateCartPrice(...num1){//here the three dots are the rest operator means that the function can pass various values
+    // if i pass val1, val2, ...num1 then the output being 500 and 1000 only 
+    return num1
+}
+//console.log(calculateCartPrice(200, 400, 500, 1000));
+
+const  user = {
+    username: "aditya",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Usernameis ${anyobject.username} and price is${anyobject.price}`);
+    
+}
+
+//handleObject(user)
+handleObject({
+    username: "adi",
+    price: 399
+})
+
+const myNewArray = [200, 400, 600, 100]
+
+function returnSecondValue(getArry){
+    return getArray[1]
+}
+
+//console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 600, 100]));
